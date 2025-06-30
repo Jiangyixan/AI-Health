@@ -1,0 +1,7 @@
+# 忽略微信开发者工具的编译输出
+miniprogram_npm/
+node_modules/
+dist/
+.idea/
+.project.config.json
+*.log
