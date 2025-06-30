@@ -1,0 +1,24 @@
+<view class="con">
+  <view class="title1">登录账号</view>
+  <view class="kong"></view>
+  <form>
+    <view class="cu-form-group">
+      <!-- <view class="title">手机号码</view> -->
+      <input placeholder="请输入手机号码" bindinput="inputMobilePhone"></input>
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-blue">
+          +86
+        </view>
+        <view class="cu-tag line-blue">
+          中国大陆
+        </view>
+      </view>
+    </view>
+    <view class="kong1"></view>
+    <view class="cu-form-group">
+      <!-- <view class="title">密码</view> -->
+      <input placeholder="请输入密码" bindinput="inputPassword"></input>
+    </view>
+  </form>
+  <button class="button" bindtap='login'>登录</button>
+</view>

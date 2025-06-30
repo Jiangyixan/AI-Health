@@ -1,0 +1,35 @@
+
+<view class="carousel-container">
+  <!-- 轮播图区域 -->
+  <swiper class="swiper-container" indicator-dots indicator-color="#fff" autoplay interval="3000" circular>
+    <!-- 轮播项 -->
+    <swiper-item>
+      <view class="item">
+        <image src="../../image/1.jpg" mode="aspectFill"></image>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view class="item">
+        <image src="../../image/2.jpg" mode="aspectFill"></image>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view class="item">
+        <image src="../../image/3.jpg"  mode="aspectFill"></image>
+      </view>
+    </swiper-item>
+  </swiper>
+
+  <!--膳食周报和日报-->
+  <view class="report">
+    <view class="weekly-report">
+      <!-- 点击图片跳转到目标页面 -->
+      <image src="../../image/4.jpg" bindtap="redirectToTargetPage1"></image>
+    </view>
+    <view class="daily-report">
+      <!-- 点击图片跳转到目标页面 -->
+      <image src="../../image/5.jpg" bindtap="redirectToTargetPage2"></image>
+    </view>
+  </view>
+
+</view>

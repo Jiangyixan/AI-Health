@@ -1,0 +1,9 @@
+{
+  "usingComponents": {},
+  "window":{
+    "backgroundTextStyle":"light", 
+    "navigationBarBackgroundColor": "#fff", 
+    "navigationBarTitleText": "历史记录",
+    "navigationBarTextStyle":"black"
+  }
+}

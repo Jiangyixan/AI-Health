@@ -1,0 +1,23 @@
+<block wx:if="{{pageMode==1}}">
+  <view class="container">
+    <view>登录即可查看对话历史！</view>
+  </view>
+</block>
+
+<block wx:elif="{{pageMode==2}}">
+  <view class="container">
+    <view>还没有对话历史哦！</view>
+    <view>快和AI营养师开始对话吧！</view>
+  </view>
+</block>
+
+<block wx:elif="{{pageMode==3}}">
+  <view class="dialogue">
+    <scroll-view scroll-y="{{true}}" style="height: 100%;">
+      <view class="dialogue-block" bindtap="click" data-text="{{item}}" wx:for="{{dialogueList}}">
+        <view class="dialogue-content">{{item.msg_from_user_content}}</view>
+        <view class="dialogue-time">{{item.msg_time}}</view>
+      </view>
+    </scroll-view>
+  </view>
+</block>

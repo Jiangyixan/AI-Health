@@ -1,0 +1,32 @@
+<block wx:if="{{pageMode==1}}">
+  <view class="container">
+    <image class="image-default-avatar" src="/image/default_avatar.png" mode="widthFix"></image>
+    <button class="button-login" bindtap="login">登录</button>
+    <button class="button-register" bindtap="register">注册</button>
+  </view>
+</block>
+
+<block wx:elif="{{pageMode==2}}">
+  <view class="top-box">
+    <image src="../../image/name.jpg" class="avatar"></image>
+    <view class="username">{{userUsername}}</view>
+  </view>
+
+  <view class="panel">
+    <view class="panel-list-item">
+      <text>联系客服</text>
+      <image src="/image/arrow.png"></image>
+    </view>
+
+    <view class="panel-list-item">
+      <text>设置</text>
+      <image src="/image/arrow.png"></image>
+    </view>
+
+    <view class="panel-list-item" bindtap="logout">
+      <text>退出登录</text>
+      <image src="/image/arrow.png"></image>
+    </view>
+  </view>
+
+</block>

@@ -1,0 +1,58 @@
+<view class="analysis-page">
+  <!-- 顶部导航栏 -->
+  <view class="nav-bar">
+    <!-- 可以加入导航栏内容 -->
+  </view>
+
+  <view class="container">
+    <!-- 显示最新打卡记录 -->
+    <view class="meal-log">
+      <view class="meal-title">饮食打卡记录</view>
+
+      <!-- 餐次 -->
+      <view class="meal-item">
+        <view class="meal-type">餐次: {{mealLog.meal_type}}</view>
+      </view>
+
+      <!-- 内容 -->
+      <view class="meal-item">
+        <view class="meal-content">内容: {{mealLog.content}}</view>
+      </view>
+
+      <!-- 已上传图片 -->
+      <view class="meal-item">
+        <view class="meal-images">
+          <!-- 文字部分单独一行 -->
+          <view class="images-text">
+            <text>已上传图片：</text>
+          </view>
+
+          <!-- 图片部分 -->
+          <view class="images-container">
+            <view wx:for="{{mealLog.images}}" wx:key="index">
+              <image src="{{item}}" mode="aspectFill" class="meal-image" />
+            </view>
+          </view>
+        </view>
+      </view>
+
+      <!-- 食物标签展示区域 -->
+      <view class="meal-tags">
+        <view class="tags-title">食物标签：</view>
+        <view class="tags-container">
+          <view wx:for="{{mealLog.food_tags}}" wx:key="index" class="tag-item">
+            {{item}}
+          </view>
+        </view>
+      </view>
+    </view> <!-- meal-log 结束 -->
+
+    <!-- 显示分析结果 -->
+    <view class="meal-analysis" wx:if="{{analysisResult}}">
+      <view class="analysis-title">饮食分析</view>
+      <view class="analysis-content">
+        <pre>{{analysisResult | json}}</pre> <!-- 这里将分析结果以 JSON 格式展示 -->
+      </view>
+    </view>
+  </view>
+</view>

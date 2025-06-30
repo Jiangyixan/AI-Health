@@ -1,0 +1,43 @@
+/* index.wxss */
+.carousel-container {
+  width: 90%;
+  margin: 10px auto 0;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 200px;
+}
+
+.item {
+  height: 200px;
+}
+
+.item image {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px; 
+}
+
+.report {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  height: 100px;
+}
+
+.weekly-report,
+.daily-report {
+  width: auto; /* 修改为自适应宽度 */
+  margin: 0 5px; /* 添加外边距 */
+  height: 100px;
+}
+.interval {
+  width: 10px;
+}
+.weekly-report image,
+.daily-report image {
+  height: 120px;
+  width: 180px;
+  border-radius: 5px; 
+}

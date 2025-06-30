@@ -1,0 +1,43 @@
+.block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+}
+
+.user1, .user2 {
+  border-top-left-radius: 43rpx;
+  border-top-right-radius: 43rpx;
+  border-bottom-left-radius: 0rpx;
+  border-bottom-right-radius: 43rpx;
+  margin-top: 10px;
+  margin-left: 10px;
+  padding: 8px;
+  max-width: 80%;
+  word-wrap: break-word;
+  background-color: #f0f0f0;
+  align-self: flex-start;
+}
+
+.ai1, .ai2 {
+  border-top-left-radius: 43rpx;
+  border-top-right-radius: 43rpx;
+  border-bottom-left-radius: 43rpx;
+  border-bottom-right-radius: 0rpx;
+  margin-top: 20px;
+  margin-left: 50px;
+  padding: 8px;
+  max-width: 80%;
+  word-wrap: break-word;
+  background-color: #553a91;
+  align-self: flex-end;
+  color: white; /* 将字体颜色设置为白色 */
+}
+
+.img {
+  width: 100%;
+  max-width: 300px;
+  margin-top: 20px;
+  margin-left: 10px;
+  border-radius: 8px;
+}

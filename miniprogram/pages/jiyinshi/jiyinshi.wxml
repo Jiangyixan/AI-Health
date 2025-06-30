@@ -1,0 +1,40 @@
+<view class="container">
+    <!-- 顶部标题 -->
+    <view class="header">
+        <text class="title">每日饮食打卡</text>
+    </view>
+    <!-- 三餐导航栏 -->
+    <view class="meal-nav">
+        <view class="meal-item" bindtap="navigateToMeal" data-type="早餐">
+            <view class="meal-icon">
+                <image src="../../image/jiyinshi/breakfast.png" mode="aspectFit"></image>
+            </view>
+            <text class="meal-name">+ 早餐</text>
+        </view>
+        <view class="meal-item" bindtap="navigateToMeal" data-type="午餐">
+            <view class="meal-icon">
+                <image src="../../image/jiyinshi/lunch.png" mode="aspectFit"></image>
+            </view>
+            <text class="meal-name">+ 午餐</text>
+        </view>
+        <view class="meal-item" bindtap="navigateToMeal" data-type="晚餐">
+            <view class="meal-icon">
+                <image src="../../image/jiyinshi/dinner.png" mode="aspectFit"></image>
+            </view>
+            <text class="meal-name">+ 晚餐</text>
+        </view>
+    </view>
+    <!-- 打卡历史记录 -->
+    <view class="history-section">
+        <view class="section-title">打卡历史</view>
+        <view class="history-list" wx:if="{{historyList && historyList.length > 0}}">
+            <!-- 历史记录内容将在这里显示 -->
+            <view wx:for="{{historyList}}" wx:key="id" class="history-item">
+                <text>{{item.date}} {{item.mealType}}</text>
+            </view>
+        </view>
+        <view class="empty-history" wx:else>
+            <text>暂无打卡记录，快去记录您的饮食吧！</text>
+        </view>
+    </view>
+</view>

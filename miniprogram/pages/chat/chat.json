@@ -1,0 +1,7 @@
+{
+  "window":{
+    "backgroundTextStyle":"light", 
+    "navigationBarBackgroundColor": "#fff", 
+    "navigationBarTitleText": "AI营养师",
+    "navigationBarTextStyle":"black"
+  }}

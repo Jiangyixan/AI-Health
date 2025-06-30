@@ -1,0 +1,114 @@
+/* 页面背景色 */
+.container {
+    background-color: #f2f2f2; /* 整个页面的背景为浅灰色 */
+    padding: 10rpx;  /* 页面内容的内边距，可以调整来改变间距 */
+  }
+  
+  /* 饮食打卡记录部分 */
+  .meal-log {
+    background-color: #ffffff; /* 饮食信息模块背景为白色 */
+    border-radius: 15rpx; /* 圆角效果 */
+    padding: 40rpx;  /* 饮食信息区域的内边距 */
+    margin-bottom: 20rpx; /* 模块之间的下边距 */
+  }
+  
+  /* 每个模块间的分隔 (餐次、内容、标签等) */
+  .meal-item {
+    background-color: #eaeaea; /* 每个模块背景为浅灰色 */
+    border-radius: 15rpx; /* 圆角效果 */
+    padding: 20rpx;  /* 内边距 */
+    margin-bottom: 10rpx; /* 每个模块之间的间距 */
+  }
+  
+  /* 饮食信息中的每个文本区域的字体和背景 */
+  .meal-title{
+    font-size: 40rpx;  /* 增大字体大小 */
+    font-weight: bold; /* 加粗字体 */
+    color: #333333;    /* 深灰色字体 */
+    text-align: center; /* 居中对齐 */
+    margin-bottom: 20rpx; /* 给下面留一些空间 */
+  }
+  .meal-type, .meal-content, .meal-images {
+    font-size: 28rpx; /* 字体大小，调整此值可修改文字的大小 */
+    color: #333333; /* 深灰色字体，确保文字清晰可读 */
+  }
+  
+  /* 图片部分，处理图片的布局 */
+  .meal-images {
+    margin-top: 10rpx;  /* 图片部分的顶部间距 */
+  }
+  
+  /* 显示“已上传图片”的文字部分 */
+  .images-text {
+    font-size: 26rpx; /* 字体大小 */
+    color: #333333; /* 深灰色字体 */
+    margin-bottom: 10rpx; /* 文字与图片之间的间距 */
+  }
+  
+  /* 图片容器，用于显示图片 */
+  .images-container {
+    display: flex;  /* 使用弹性布局，方便图片排列 */
+    flex-wrap: wrap; /* 允许换行 */
+  }
+  
+  /* 每个图片的样式 */
+  .meal-image {
+    width: 200rpx;  /* 图片的宽度 */
+    height: 200rpx; /* 图片的高度 */
+    border-radius: 10rpx; /* 图片圆角 */
+    margin: 10rpx; /* 图片之间的间距 */
+  }
+  
+  /* 食物标签展示区域 */
+  .meal-tags {
+    margin-top: 20rpx; /* 食物标签模块顶部间距 */
+  }
+  
+  /* 食物标签标题 */
+  .tags-title {
+    font-size: 28rpx; /* 标题字体大小 */
+    color: #666666; /* 更淡的灰色字体 */
+    margin-bottom: 10rpx; /* 标题与标签之间的间距 */
+  }
+  
+  /* 标签容器，用于显示标签 */
+  .tags-container {
+    display: flex;  /* 使用弹性布局，方便标签排列 */
+    flex-wrap: wrap; /* 允许换行 */
+    background-color: #eaeaea; /* 标签部分背景为浅灰色 */
+    padding: 15rpx;  /* 标签区域的内边距 */
+    border-radius: 15rpx; /* 标签区域圆角效果 */
+  }
+  
+  /* 每个标签的样式 */
+  .tag-item {
+    padding: 10rpx 20rpx;  /* 标签内的内边距 */
+    background-color: #f2f2f2; /* 标签背景为浅灰色 */
+    border-radius: 30rpx; /* 标签的圆角 */
+    margin: 10rpx; /* 标签之间的间距 */
+    font-size: 26rpx; /* 标签字体大小 */
+    color: #333333; /* 标签字体颜色 */
+  }
+  
+  /* 饮食分析区域 */
+  .meal-analysis {
+    background-color: #ffffff; /* 饮食分析部分背景为白色 */
+    padding: 20rpx;  /* 内边距 */
+    border-radius: 15rpx; /* 圆角效果 */
+    margin-top: 20rpx; /* 饮食分析部分的上边距 */
+  }
+  
+  /* 饮食分析标题 */
+  .analysis-title {
+    font-size: 32rpx; /* 标题字体大小 */
+    font-weight: bold; /* 加粗字体 */
+    color: #000; /* 黑色字体 */
+    margin-bottom: 15rpx; /* 标题与内容之间的间距 */
+  }
+  
+  /* 饮食分析内容 */
+  .analysis-content {
+    font-size: 28rpx; /* 内容字体大小 */
+    color: #333; /* 内容字体颜色 */
+  }
+  

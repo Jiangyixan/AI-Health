@@ -1,0 +1,23 @@
+<block wx:if="{{pageMode==1}}">
+  <view class="container">
+    <view>登录即可查看膳食日报！</view>
+  </view>
+</block>
+
+<block wx:elif="{{pageMode==2}}">
+  <view class="box1">
+    <view class="section-title">营养摄入情况</view>
+    <view class="text">{{nutritionIntake}}</view>
+  </view>
+
+  <view class="box2">
+    <view class="section-title">饮食建议</view>
+    <view class="text">{{dietaryAdvice}}</view>
+  </view>
+
+  <view class="box3">
+    <view class="section-title">用户画像总结</view>
+    <view class="text">{{profileSummary}}</view>
+  </view>
+</block>
+

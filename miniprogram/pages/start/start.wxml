@@ -1,0 +1,6 @@
+<view class="container">
+    <image class="image-default-avatar" src="/image/default_avatar.png" mode="widthFix"></image>
+    <button class="button-login" bindtap="login">登录</button>
+    <button class="button-register" bindtap="register">注册</button>
+    <button class="button-skip" bindtap="skip">暂时跳过</button>
+</view>

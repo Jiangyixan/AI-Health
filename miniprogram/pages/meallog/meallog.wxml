@@ -1,0 +1,46 @@
+<view class="meal-log-container">
+    <!-- 顶部导航栏 -->
+    <view class="nav-bar">
+        <view class="left-placeholder"></view>
+        <view class="page-title">{{mealTitle}}</view>
+        <view class="publish-btn" bindtap="publishLog">
+            <text>发表</text>
+        </view>
+    </view>
+    <!-- 内容区域 -->
+    <view class="content-area">
+        <!-- 文本输入框 -->
+        <view class="text-input-area">
+            <textarea placeholder="这一刻的想法..." bindinput="onContentInput" value="{{content}}" maxlength="300" class="content-input"></textarea>
+            <text class="word-count">{{contentLength}}/300</text>
+        </view>
+        <!-- 图片上传区域 -->
+        <view class="image-upload-area">
+            <!-- 已上传的图片 -->
+            <view class="uploaded-images" wx:if="{{uploadedImages.length > 0}}">
+                <view class="image-item" wx:for="{{uploadedImages}}" wx:key="index">
+                    <image src="{{item}}" mode="aspectFill" bindtap="previewImage" data-src="{{item}}"></image>
+                    <view class="delete-btn" bindtap="deleteImage" data-index="{{index}}">×</view>
+                </view>
+            </view>
+            <!-- 上传按钮 -->
+            <view class="upload-btn-container" wx:if="{{uploadedImages.length < 9}}">
+                <view class="upload-btn" bindtap="chooseImage">
+                    <view class="upload-icon">+</view>
+                </view>
+            </view>
+        </view>
+        <!-- 食物标签区域 (可选功能) -->
+        <view class="food-tags-area">
+            <view class="tags-title">添加食物标签 (选填)</view>
+            <view class="tags-container">
+                <view class="tag-item {{selectedTags[tag] ? 'selected' : ''}}" wx:for="{{foodTags}}" wx:for-item="tag" wx:key="index" bindtap="toggleTag" data-tag="{{tag}}">
+                    {{tag}}
+                </view>
+                <view class="add-tag-btn" bindtap="addCustomTag">
+                    <text>+自定义</text>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

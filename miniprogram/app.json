@@ -1,0 +1,59 @@
+{
+  "pages": [
+    "pages/start/start",
+    "pages/index/index",
+    "pages/chat/chat",
+    "pages/history/history",
+    "pages/home/home",
+    "pages/login/login",
+    "pages/register/register",
+    "pages/list/list",
+    "pages/week/week",
+    "pages/day/day",
+    "pages/jiyinshi/jiyinshi",
+    "pages/meallog/meallog",
+    "pages/analysis/analysis"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "好好吃饭营养分析系统",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/image/tabar/index.png",
+        "selectedIconPath": "/image/tabar/index-active.png"
+      },
+      {
+        "pagePath": "pages/jiyinshi/jiyinshi",
+        "text": "记饮食",
+        "iconPath": "/image/tabar/history.png",
+        "selectedIconPath": "/image/tabar/history-active.png"
+      },
+      {
+        "pagePath": "pages/chat/chat",
+        "text": "对话",
+        "iconPath": "/image/tabar/chat.png",
+        "selectedIconPath": "/image/tabar/chat-active.png"
+      },
+      {
+        "pagePath": "pages/history/history",
+        "text": "记录",
+        "iconPath": "/image/tabar/history.png",
+        "selectedIconPath": "/image/tabar/history-active.png"
+      },
+      {
+        "pagePath": "pages/home/home",
+        "text": "个人",
+        "iconPath": "/image/tabar/home.png",
+        "selectedIconPath": "/image/tabar/home-active.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,98 @@
+/* 设置整个容器的样式 */
+.con {
+  background-color: rgb(255, 255, 255); /* 设置背景色为白色 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* 设置容器的最小高度为视窗高度 */
+}
+
+.title1 {
+  font-size: 24px;
+  letter-spacing: 2px; /* 设置字间距为 2 像素 */
+  color: #000; /* 设置标题文本颜色为黑色 */
+  margin-top: 40px;
+}
+
+/* 控制两个视图之间的间距 */
+.kong{
+  height: 100rpx;
+}
+
+.kong1{
+  height: 40rpx;
+}
+.kong2 {
+  height: 20rpx;
+}
+
+/* 设置标题的样式，加粗 */
+.title {
+  font-size: 16px;
+  color: #000; /* 设置标题文本颜色为黑色 */
+  font-weight: bold; /* 加粗 */
+}
+
+/* 控制每个表单组之间的间距 */
+/* .cu-form-group {
+  margin-bottom: 20rpx;
+} */
+
+/* 设置文本框的样式，加粗 */
+input {
+  border: none; /* 设置文本框边框颜色为黑色，边框宽度加粗 */
+  background-color: rgb(235, 235, 235); /* 设置输入框背景颜色 */
+  padding: 24rpx; /* 扩大文本框边界 */
+  border-radius: 10rpx; /* 设置文本框边框为圆角 */
+  /* font-weight: bold; 设置文本框字体加粗 */
+  font-size: 16px; /* 设置文本框字体大小 */
+  width: 90%; /* 设置文本框宽度为父元素宽度的90% */
+  margin: auto; /* 将文本框水平居中 */
+
+}
+
+/* 设置标签容器的样式 */
+.cu-capsule {
+  display: flex;
+  align-items: center;
+}
+
+/* 设置标签的样式 */
+.cu-tag {
+  padding: 5rpx 10rpx;
+  font-size: 11px;
+  color: #fff;
+  border-radius: 15rpx;
+}
+
+/* 蓝色背景标签 */
+.bg-blue {
+  background-color: rgb(88, 56, 144);
+}
+
+/* 蓝色文字标签 */
+.line-blue {
+  margin-left: 5rpx;
+  color: rgb(88, 56, 144);
+}
+
+/* 设置按钮的样式 */
+.button {
+  width: 70%;
+  background-color: rgb(88, 56, 144);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 14rpx;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+  margin-top: auto; /* 将按钮放置在靠下的位置 */
+  margin-bottom: 280px; /* 设置按钮与底部的间距 */
+}
+
+/* 按钮悬停时的样式 */
+.button:hover {
+  background-color: #54558d; /* 按钮悬停时的背景色 */
+}

@@ -1,0 +1,11 @@
+
+<block wx:if="{{pageMode==1}}">
+  <view class="user1">{{dialogue.msg_from_user_content}}</view>
+  <view class="ai1">{{dialogue.msg_from_ai_content}}</view>
+</block>
+
+<block wx:elif="{{pageMode==2}}">
+  <view class="user2">请你分析这张图片的营养成分</view>
+  <image class="img" src="{{imgPath}}"></image>
+  <view class="ai2">{{dialogue.msg_from_ai_content}}</view>
+</block>

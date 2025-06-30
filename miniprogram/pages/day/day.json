@@ -1,0 +1,9 @@
+{
+  "usingComponents": {},
+  "window":{
+    "backgroundTextStyle":"light", 
+    "navigationBarBackgroundColor": "#fff", 
+    "navigationBarTitleText": "膳食日报",
+    "navigationBarTextStyle":"black"
+  }
+}
