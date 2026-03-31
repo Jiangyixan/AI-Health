@@ -10,35 +10,34 @@
 - AI 能力	多模态大模型 API（图像识别 + 对话生成）  
 - 数据存储	云数据库（用户信息、膳食记录、总结数据）
 ## 项目结构
-AI-Health/
-AI-Health/
-├── miniprogram/           # 小程序前端代码
-│   ├── pages/             # 页面文件
-│   │   ├── analysis/      # 分析每日每餐饮食
-│   │   ├── chat/          # 与AI对话界面
-│   │   ├── history/       # 打卡历史记录界面
-│   │   ├── home/          # 用户主页
-│   │   ├── index/         # 索引页
-│   │   ├── jiyinshi/      # 记饮食主页
-│   │   ├── login/         # 登录
-│   │   ├── meallog/       # 打卡饮食界面
-│   │   └── register/      # 注册
-│   ├── components/        # 自定义组件
-│   ├── utils/             # 工具函数（API 请求封装等）
-│   └── app.js             # 小程序入口
+AI-Health/  
+├── miniprogram/           # 小程序前端代码  
+│   ├── pages/             # 页面文件  
+│   │   ├── analysis/      # 分析每日每餐饮食  
+│   │   ├── chat/          # 与AI对话界面  
+│   │   ├── history/       # 打卡历史记录界面  
+│   │   ├── home/          # 用户主页  
+│   │   ├── index/         # 索引页  
+│   │   ├── jiyinshi/      # 记饮食主页  
+│   │   ├── login/         # 登录  
+│   │   ├── meallog/       # 打卡饮食界面  
+│   │   └── register/      # 注册  
+│   ├── components/        # 自定义组件  
+│   ├── utils/             # 工具函数（API 请求封装等）  
+│   └── app.js             # 小程序入口  
 │
-├── cloudfunctions/        # 云函数
-│   ├── addDialogue/       # 与AI对话
-│   ├── addMealLog/        # 增加一条饮食记录
-│   ├── deleteDialogue/    # 删除聊天记录
-│   ├── getDialogue/       # 查询聊天记录
-│   ├── getDialogues/      # 查询聊天对话
-│   ├── getMealLog/       # 查询打卡记录
-│   ├── getPeriodDialogue/ # 范围查询打卡记录
-│   ├── login/             # 登录
-│   └── register/          # 注册
+├── cloudfunctions/        # 云函数  
+│   ├── addDialogue/       # 与AI对话  
+│   ├── addMealLog/        # 增加一条饮食记录  
+│   ├── deleteDialogue/    # 删除聊天记录  
+│   ├── getDialogue/       # 查询聊天记录  
+│   ├── getDialogues/      # 查询聊天对话  
+│   ├── getMealLog/       # 查询打卡记录  
+│   ├── getPeriodDialogue/ # 范围查询打卡记录  
+│   ├── login/             # 登录  
+│   └── register/          # 注册  
 │
-└── README.md
+└── README.md  
 
 ![登录注册](https://github.com/user-attachments/assets/e15c20f2-4bbc-46aa-b319-d107909a4353)
 
